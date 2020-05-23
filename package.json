@@ -12,7 +12,8 @@
     "build": "npm-run-all -s clean concat-licenses build:src",
     "clean": "rimraf dev dist",
     "concat-licenses": "concat-licenses licenses.txt --production --allowGuess",
-    "build:src": "parcel build index.html"
+    "build:src": "parcel build index.html --public-url /VoxelWorks-Texture-Converter/",
+    "dist": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "jszip": "^3.4.0"
@@ -21,7 +22,6 @@
     "concat-licenses": "^2.0.1",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-inliner": "^1.0.14",
     "parcel-plugin-text": "^0.9.6",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.3"

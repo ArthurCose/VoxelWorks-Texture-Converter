@@ -7,12 +7,12 @@ Converts Minecraft 1.13+ resource packs to VoxelWorks terrain atlases. Defaults 
 - Install the latest LTS of NodeJS with npm
 - Run `npm install` in the project folder to download dependencies
 - Run `npm build`
-- Check `dist/index.html`, it should be the only necessary file for sharing
+  - Files will be generated in `dist` for GitHub Pages
 
 # Development
 
 - Make sure to complete the Building section once to have the necessary files to run
-- Run `npm start` to start a hot reloading test server (this overwrites `dist/index.html` with a non sharable development file)
+- Run `npm start` to start a hot reloading test server
 
 ## Usage
 
