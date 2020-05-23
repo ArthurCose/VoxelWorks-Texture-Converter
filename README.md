@@ -9,10 +9,15 @@ Converts Minecraft 1.13+ resource packs to VoxelWorks terrain atlases. Defaults 
 - Run `npm build`
   - Files will be generated in `dist` for GitHub Pages
 
-# Development
+## Development
 
 - Make sure to complete the Building section once to have the necessary files to run
 - Run `npm start` to start a hot reloading test server
+
+## Deploying
+
+- Commit and push files to master
+- Run `npm dist`
 
 ## Usage
 
