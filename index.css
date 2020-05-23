@@ -1,0 +1,53 @@
+body {
+  background-color: lightgray;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+#main-container > * {
+  flex: 1;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-items: flex-start;
+}
+
+#inputs > * {
+  margin-bottom: 8px;
+}
+
+#render-button,
+#view-licenses {
+  align-self: center;
+}
+
+#render-button {
+  margin-top: 32px;
+}
+
+#view-licenses {
+  font-size: 0.9em;
+}
+
+canvas {
+  image-rendering: pixelated;
+  background-color: white;
+  width: 80%;
+  min-width: 512px;
+}

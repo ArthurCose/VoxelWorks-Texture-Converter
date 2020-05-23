@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VoxelWorks Texture Converter</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="inputs">
+        <input id="file-input" type="file" accept=".zip,.jar" />
+
+        <div>
+          <span>Biome:</span>
+          <select id="biome-select">
+            <option>Badlands</option>
+            <option>Birch Forest</option>
+            <option>Dark Forest</option>
+            <option selected>Forest</option>
+            <option>Desert</option>
+            <option>Jungle</option>
+            <option>Jungle Edge</option>
+            <option>Mountains</option>
+            <option>Mushroom Fields</option>
+            <option>Ocean</option>
+            <option>Plains</option>
+            <option>Snowy Beach</option>
+            <option>Snowy Tundra</option>
+            <option>Swamp (Green)</option>
+            <option>Swamp (Olive)</option>
+            <option>Taiga</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Snowstone Grass:</span>
+          <select id="snowstone-select">
+            <option>green</option>
+            <option>snowy</option>
+            <option>none</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Rose Texture:</span>
+          <select id="rose-select">
+            <option>rose_bush_top</option>
+            <option>poppy</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Viola Texture:</span>
+          <select id="viola-select">
+            <option>lilac_top</option>
+            <option>allium</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Obsidian Texture:</span>
+          <select id="obsidian-select">
+            <option>obsidian</option>
+            <option>blackstone</option>
+            <option>blackstone_top</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Obsidian Bricks Texture:</span>
+          <select id="obsidian-bricks-select">
+            <option>obsidian</option>
+            <option selected>polished_blackstone_bricks</option>
+            <option>cracked_polished_blackstone_bricks</option>
+            <option>crying_obsidian</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Steel Texture:</span>
+          <select id="steel-select">
+            <option>netherite_block</option>
+            <option>smithing_table_top</option>
+            <option>cauldron_inner</option>
+            <option>hopper_inside</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Workbench Side Texture:</span>
+          <select id="workbench-select">
+            <option>crafting_table_front</option>
+            <option>crafting_table_side</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Glass Texture:</span>
+          <select id="glass-select">
+            <option>glass</option>
+            <option>black_stained_glass</option>
+            <option>blue_stained_glass</option>
+            <option>brown_stained_glass</option>
+            <option>cyan_stained_glass</option>
+            <option>gray_stained_glass</option>
+            <option>green_stained_glass</option>
+            <option>light_blue_stained_glass</option>
+            <option>light_gray_stained_glass</option>
+            <option>lime_stained_glass</option>
+            <option>magenta_stained_glass</option>
+            <option>orange_stained_glass</option>
+            <option>pink_stained_glass</option>
+            <option>purple_stained_glass</option>
+            <option>red_stained_glass</option>
+            <option>white_stained_glass</option>
+            <option>yellow_stained_glass</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Crate Texture:</span>
+          <select id="crate-select">
+            <option>composter_bottom</option>
+            <option>barrel_bottom</option>
+            <option>barrel_side</option>
+            <option>barrel_top</option>
+            <option>beehive_end</option>
+            <option>loom_bottom</option>
+            <option>shulker_box</option>
+          </select>
+        </div>
+
+        <button id="render-button" disabled>Render</button>
+
+        <a id="view-licenses" href="javascript:void">view licenses</a>
+      </div>
+      <div>
+        <canvas width="512" height="512"></canvas>
+      </div>
+    </div>
+    <script src="src/index.ts"></script>
+  </body>
+</html>

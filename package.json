@@ -1,0 +1,29 @@
+{
+  "name": "voxelworks-texture-converter",
+  "version": "1.0.0",
+  "description": "Converts Minecraft jars and resource packs to VoxelWorks textures",
+  "author": "Arthur Cosentino",
+  "license": "GPL",
+  "browserslist": [
+    "last 2 chrome versions"
+  ],
+  "scripts": {
+    "start": "parcel index.html --out-dir dev",
+    "build": "npm-run-all -s clean concat-licenses build:src",
+    "clean": "rimraf dev dist",
+    "concat-licenses": "concat-licenses licenses.txt --production --allowGuess",
+    "build:src": "parcel build index.html"
+  },
+  "dependencies": {
+    "jszip": "^3.4.0"
+  },
+  "devDependencies": {
+    "concat-licenses": "^2.0.1",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-inliner": "^1.0.14",
+    "parcel-plugin-text": "^0.9.6",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.3"
+  }
+}
