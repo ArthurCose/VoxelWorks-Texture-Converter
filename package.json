@@ -16,7 +16,7 @@
     "dist": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
-    "jszip": "^3.4.0"
+    "jszip": "^3.7.0"
   },
   "devDependencies": {
     "concat-licenses": "^2.0.1",
